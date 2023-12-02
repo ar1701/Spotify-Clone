@@ -8,20 +8,20 @@ body {
     overflow: hidden;
 }
 
-.main{
+.main {
     display: flex;
     height: 100vh;
     padding: 0.5rem;
 }
 
-.sidebar{
+.sidebar {
     background-color: #000;
     width: 340px;
     border-radius: 1rem;
     margin-right: 0.5rem;
 }
 
-.main-content{
+.main-content {
     background-color: #121212;
     flex: 1;
     border-radius: 1rem;
@@ -29,21 +29,24 @@ body {
     padding: 0 1.5rem 0 1.5rem;
 }
 
-.music-player{
+.music-player {
     background-color: black;
     position: fixed;
     bottom: 0px;
     width: 100%;
     height: 72px;
     padding-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-a{
+a {
     text-decoration: none;
     color: white;
 }
 
-.nav{
+.nav {
     background: #121212;
     border-radius: 1rem;
     display: flex;
@@ -53,25 +56,26 @@ a{
     padding: 0.5rem 0.75rem;
 }
 
-.nav-option{
+.nav-option {
     line-height: 2.5rem;
     opacity: 0.7;
     padding: 0.5rem 0.75rem;
 }
-.nav-option:hover{
-   opacity: 1;
+
+.nav-option:hover {
+    opacity: 1;
 }
 
-.nav-option i{
+.nav-option i {
     font-size: 1.25rem;
 }
 
-.nav-option a{
+.nav-option a {
     font-size: 1rem;
     margin-left: 1rem;
 }
 
-.library{
+.library {
     background-color: #121212;
     border-radius: 1rem;
     width: 307px;
@@ -80,13 +84,13 @@ a{
     padding: 0.5rem 0.75rem;
 }
 
-.options{
+.options {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.lib-option img{
+.lib-option img {
     height: 1.25rem;
     width: 1.25rem;
 }
@@ -95,16 +99,17 @@ a{
     font-size: 1.25rem;
     display: flex;
 }
+
 .options .icons i {
     opacity: 0.7;
     margin-right: 1rem;
 }
 
-.options .icons i:hover{
+.options .icons i:hover {
     opacity: 1;
 }
 
-.box{
+.box {
     margin: 0.75rem 0 1.75rem 0px;
     padding: 0.75rem 1rem;
     height: 8rem;
@@ -113,17 +118,17 @@ a{
 
 }
 
-.box-p1{
+.box-p1 {
     font-size: 1rem;
     font-weight: 500;
 }
 
-.box-p2{
+.box-p2 {
     font-size: 0.85rem;
     opacity: 0.9;
 }
 
-.badge{
+.badge {
     background-color: white;
     border: none;
     border-radius: 100px;
@@ -134,12 +139,12 @@ a{
     width: fit-content;
 }
 
-.dark-badge{
+.dark-badge {
     background-color: #000;
     color: #fff;
 }
 
-.sticky-nav{
+.sticky-nav {
     position: sticky;
     top: 0;
     background-color: #121212;
@@ -151,7 +156,7 @@ a{
     z-index: 10;
 }
 
-.sticky-nav-icons img{
+.sticky-nav-icons img {
     margin-left: 0.75rem;
     background-color: #000;
     height: 25px;
@@ -159,40 +164,41 @@ a{
     border-radius: 50%;
     opacity: 0.8;
 }
-.sticky-nav-options{
+
+.sticky-nav-options {
     display: flex;
     justify-content: center;
     align-items: center;
-   
+
 }
 
-.nav-item{
+.nav-item {
     margin-left: 1.25rem;
 }
 
-.sticky-nav-options i{
+.sticky-nav-options i {
     margin-top: 4px;
 }
 
-.fa-user{
+.fa-user {
     border-radius: 50%;
     background-color: #000;
     margin-right: 10px;
     font-size: 1.20rem;
 }
 
-@media (width<1000px){
-    .hide{
+@media (width<1000px) {
+    .hide {
         display: none;
     }
 }
 
-.card-container{
+.card-container {
     display: flex;
     flex-wrap: wrap;
 }
 
-.card{
+.card {
     background-color: #232323;
     width: 150px;
     border-radius: 0.5rem;
@@ -203,76 +209,154 @@ a{
 
 
 
-.card-img{
+.card-img {
     width: 100%;
     border-radius: 0.5rem;
 
 }
 
-.card-title{
+.card-title {
     font-weight: 600;
 }
 
-.card-info{
+.card-info {
     font-size: 0.85rem;
     opacity: 0.8;
 }
 
-.footer{
+.footer {
     height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.line{
+.line {
     width: 90%;
     height: 50%;
     opacity: 0.4;
     border-top: 1px solid white;
 }
 
-.left{
+.left {
     display: flex;
     align-items: center;
     padding: 0.5rem;
-    width:25%;
+    width: 25%;
+    margin-top: 1.5rem;
 }
 
-.song-img img{
+.song-img img {
     width: 4rem;
     height: 4rem;
-    margin-right:0.5rem ;
+    margin-right: 0.5rem;
     border-radius: 15px;
     margin-bottom: 4px;
     padding: 5px;
 }
-.song-info{
-    margin-right:1.1rem ;
+
+.song-info {
+    margin-right: 1.1rem;
     padding: 0 0.5rem 0 0.3rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
+
 }
-.song-name{
+
+.song-name {
     letter-spacing: 0.6px;
     font-weight: 580;
 }
-.singer{
+
+.singer {
     font-size: 0.7rem;
     opacity: 0.7;
     margin-top: 3px;
 }
-.singer:hover, .song-name:hover{
+
+.singer:hover,
+.song-name:hover {
     opacity: 1;
     text-decoration: white solid underline;
 }
-.heart{
+
+.heart {
     opacity: 0.7;
 }
-.heart:hover{
+
+.heart:hover {
     opacity: 1;
     cursor: pointer;
 }
+.player{
+    width: 50%;
+}
 
+.player-control-icon{
+    height: 1rem;
+    margin-right: 1.75rem;
+    opacity: 0.7;
+}
+.player-control-icon:hover{
+    opacity: 1;
+}
+
+.player-controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0.5rem;
+}
+.pp:hover{
+    height: 2.5rem;
+}
+
+.playback-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -1rem;
+}
+.progress-bar{
+    width: 70%;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+}
+.progress-bar::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.2rem;
+}
+.progress-bar::-webkit-slider-thumb{
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background: #1bd760;
+    border-radius: 50%;
+    margin-top: -6px;
+}
+
+
+.right {
+    display: flex;
+    align-items: center;
+    margin-right: -1.25rem;
+    opacity: 0.65;
+    width: 25%;
+    padding-top: 1rem;
+}
+
+.right i {
+    margin-right: 1rem;
+}
+
+.right .vol-control {
+    margin-right: 1rem;
+}
+
+.right i:hover {
+    opacity: 1;
+    cursor: pointer;
+}
